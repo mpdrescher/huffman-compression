@@ -1,0 +1,31 @@
+This is a implementation of the huffman compression
+
+--BUILD
+
+cargo build --release
+
+-> "huffman" in target/release
+
+--USAGE
+
+huffman compress [File1] [File2] [FileN]
+huffman decompress [File1] [File2] [FileN]
+
+Compression adds the extension ".comp", decompression removes it.
+
+This program was made for a school project.
+
+--Efficiency
+
+See issues for improvements that could be made.
+
+Examples:
+
+Compressing the first 4 chapters of "de bello gallico" (Plain text):
+--> 4201 bytes to 2721 bytes (64.8% of original size)
+
+Compressing the huffman executable itself:
+--> 2126731 bytes to 1463067 bytes (68.8% of original size)
+
+Compressing the eclipse icon (PNG, 256x256 8-RGBA):
+--> 13511 bytes to 16018 bytes (118.6% of original size)
